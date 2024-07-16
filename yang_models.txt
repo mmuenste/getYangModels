@@ -1,0 +1,7 @@
+git init yang_models
+cd yang_models
+git remote add -f origin https://github.com/YangModels/yang
+git config core.sparseCheckout true
+echo "vendor/cisco/nx/10.2-2" >> .git/info/sparse-checkout
+echo "vendor/cisco/xe/1731" >> .git/info/sparse-checkout
+git pull origin main
